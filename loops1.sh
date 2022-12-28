@@ -11,6 +11,9 @@ if [[ $c =~ [a-z] ]]; then
 restr=$restr${c^^}
 elif [[ $c =~ [A-Z] ]]; then
 restr=$restr${c,,}
+else
+restr=$restr${c}
 fi
 done
-echo "$restr"
+echo "$restr"   
+
