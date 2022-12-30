@@ -1,8 +1,7 @@
 #!/bin/bash
 
 # Put your code here
-echo "Enter String"
-read s
+s=$1
 len=${#s}
 for ((i=$len-1; i>=0; i--))
 do
@@ -16,4 +15,3 @@ restr=$restr${c}
 fi
 done
 echo "$restr"   
-
